@@ -24,7 +24,7 @@ public class GetAdminUserRoleName extends CustomJavaAction<java.lang.String>
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		return Core.getConfiguration().getAdminUserName();
+		return Core.getConfiguration().getAdminUserRoleName();
 		// END USER CODE
 	}
 
