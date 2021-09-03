@@ -1,0 +1,12 @@
+Buildfile: C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 49 source files to C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\run\bin
+
+package:
+      [jar] Building jar: C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+
