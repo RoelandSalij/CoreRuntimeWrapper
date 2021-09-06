@@ -1,9 +1,8 @@
-Buildfile: C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\build_core.xml
+Buildfile: C:\Mendix\GitHub\CoreRuntimeWrapper\src\CoreRuntimeWrapper\deployment\build_core.xml
 
 deploy:
-     [copy] Copying 32 files to C:\Mendix\TeamServer\Temp\RuntimeCore\deployment
+     [copy] Copying 34 files to C:\Mendix\GitHub\CoreRuntimeWrapper\src\CoreRuntimeWrapper\deployment
 
 BUILD SUCCESSFUL
-Total time: 0 seconds
-
+Total time: 1 second
 

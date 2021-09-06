@@ -1,7 +1,8 @@
-Buildfile: C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\build_core.xml
+Buildfile: C:\Mendix\GitHub\CoreRuntimeWrapper\src\CoreRuntimeWrapper\deployment\build_core.xml
 
 clean:
-   [delete] Deleting directory C:\Mendix\TeamServer\Temp\RuntimeCore\deployment\model
+   [delete] Deleting directory C:\Mendix\GitHub\CoreRuntimeWrapper\src\CoreRuntimeWrapper\deployment\model
+   [delete] Deleting directory C:\Mendix\GitHub\CoreRuntimeWrapper\src\CoreRuntimeWrapper\deployment\run
 
 BUILD SUCCESSFUL
 Total time: 0 seconds

@@ -4,6 +4,7 @@
     };
 
     var loginForm = byId("loginForm"),
+        loginHeader = byId("loginHeader"),
         loginMessage = byId("loginMessage"),
         usernameLabel = byId("usernameLabel"),
         usernameInput = byId("usernameInput"),
@@ -91,10 +92,15 @@
     };
 
     if (i18nMap) {
-        var usernameText = i18nMap.username,
+        var headerText = i18nMap.loginHeader,
+            usernameText = i18nMap.username,
             passwordText = i18nMap.password,
             buttonText = i18nMap.loginButton,
             goHomeButtonText = i18nMap.goHomeButton;
+
+        if (loginHeader && headerText) {
+            loginHeader.textContent = headerText;
+        }
 
         if (usernameText) {
             usernameLabel.textContent = usernameText;
@@ -107,11 +113,11 @@
         }
 
         if (buttonText) {
-            loginButton.value = buttonText;
+            loginButton.textContent = buttonText;
         }
 
         if (goHomeButton && goHomeButtonText) {
-            goHomeButton.value = goHomeButtonText
+            goHomeButton.textContent = goHomeButtonText
         }
     }
 
@@ -139,5 +145,14 @@
         }
     }
 
-    document.cookie = "originURI=" + location.pathname + ";max-age=" + (60 * 60 * 24 * 365);
+    var cookieParts = [
+        "originURI=" + location.pathname,
+        "max-age=" + (60 * 60 * 24 * 365),
+    ];
+
+    if (window.location.protocol === "https:") {
+        cookieParts.push("SameSite=None", "Secure");
+    }
+
+    document.cookie = cookieParts.join(";");
 })();

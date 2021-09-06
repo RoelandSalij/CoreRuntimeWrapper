@@ -1,5 +1,5 @@
 {
-  "RuntimeVersion": "8.6.2.2340",
+  "RuntimeVersion": "9.0.5.17601",
   "ProjectID": "8e7b0165-3c0e-4c89-9116-f59400a670e7",
   "ProjectName": "Runtime Core Wrapper",
   "ModelVersion": "unversioned",
@@ -27,6 +27,14 @@
     }
   ],
   "ScheduledEvents": [],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
   "RequestHandlers": [
     {
       "Name": "/api/",

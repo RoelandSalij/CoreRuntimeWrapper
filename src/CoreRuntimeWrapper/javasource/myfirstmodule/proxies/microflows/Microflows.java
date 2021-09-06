@@ -16,14 +16,7 @@ public class Microflows
 	// These are the microflows for the MyFirstModule module
 	public static void microflow(IContext context)
 	{
-		try
-		{
-			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			Core.execute(context, "MyFirstModule.Microflow", params);
-		}
-		catch (CoreException e)
-		{
-			throw new MendixRuntimeException(e);
-		}
+		Map<java.lang.String, Object> params = new HashMap<>();
+		Core.microflowCall("MyFirstModule.Microflow").withParams(params).execute(context);
 	}
 }

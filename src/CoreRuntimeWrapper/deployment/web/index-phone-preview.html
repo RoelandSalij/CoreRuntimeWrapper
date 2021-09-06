@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript">
+            // Redirect to unsupported browser page if opened from browser that doesn't support async/arrow functions
+            try {
+                eval("async () => {}");
+            } catch (error) {
+                var homeUrl = window.location.origin + window.location.pathname;
+                var appUrl = homeUrl.slice(0, homeUrl.lastIndexOf("/") + 1);
+                window.location.replace(appUrl + "unsupported-browser.html");
+            }
+        </script>
         <meta charset="utf-8" />
         <title>Mendix - Phone preview</title>
 
-        <link rel="stylesheet" href="styles/web/css/main.css?637468474538014257">
+        <link rel="stylesheet" href="styles/web/css/main.css?637665257689552178">
 
     </head>
 
